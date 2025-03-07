@@ -2,8 +2,8 @@
 
 ## Screenshots
 
-### Home Page
-![Home Page](screenshots/home.png)
+### AVERAGE MARKS PROGRAMME
+![HERE](Avg marks.png)
 
-### Dashboard
-![Dashboard](screenshots/dashboard.png)
+### ANIMALS PROGRAMME
+![HERE](animals.png)
