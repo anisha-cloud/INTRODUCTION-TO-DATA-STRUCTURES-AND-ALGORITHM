@@ -1,0 +1,64 @@
+
+
+
+
+ 
+Algorithm analysis is the process of determining how efficient an algorithm is in terms of time (how fast it runs) and space (how much memory it uses). We often use Big O notation to describe the complexity of an algorithm.
+
+ Constants (O(1))
+What it means: The algorithm takes the same amount of time to run, no matter how big the input is.
+
+Example: Accessing an element in an array by its index.
+
+python
+
+def get_first_element(arr):
+    return arr[0]  # This always takes the same time, no matter how big `arr` is.
+Why it's constant: The operation doesn't depend on the size of the input (arr). It’s just one step.
+
+Linear (O(n))
+What it means: The time it takes to run the algorithm grows proportionally with the size of the input.
+
+Example: Looping through an array to find an element.
+
+python
+
+def find_element(arr, target):
+    for element in arr:  # This loop runs `n` times, where `n` is the size of `arr`.
+        if element == target:
+            return True
+    return False
+Why it's linear: If the array has 10 elements, the loop runs 10 times. If it has 1000 elements, it runs 1000 times. The time grows linearly with the input size.
+
+ Quadratic (O(n²))
+What it means: The time it takes to run the algorithm grows proportionally to the square of the input size. This happens when you have nested loops.
+
+Example: Checking all pairs of elements in an array.
+
+python
+
+def find_pairs(arr):
+    for i in range(len(arr)):  # Outer loop runs `n` times.
+        for j in range(len(arr)):  # Inner loop also runs `n` times.
+            print(arr[i], arr[j])  # This runs `n * n = n²` times.
+Why it's quadratic: If the array has 10 elements, the inner loop runs 10 times for each of the 10 outer loops, totaling 100 operations. For 1000 elements, it’s 1,000,000 operations. The time grows quadratically with the input size.
+
+ Logarithmic (O(log n))
+What it means: The time it takes to run the algorithm grows logarithmically with the input size. This is very efficient and often seen in algorithms that divide the problem in half at each step.
+
+Example: Binary search.
+
+python
+
+def binary_search(arr, target):
+    low, high = 0, len(arr) - 1
+    while low <= high:
+        mid = (low + high) // 2  # Divide the problem in half.
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
+Why it's logarithmic: At each step, the algorithm eliminates half of the remaining elements. For an array of size 16, it takes at most 4 steps to find the target (because log₂16 = 4). For 1024 elements, it takes at most 10 steps (log₂1024 = 10). The time grows very slowly compared to the input size.
