@@ -3,7 +3,7 @@
 ## Screenshots
 
 ### AVERAGE MARKS PROGRAMME
-![HERE](avg marks.png)
+![HERE]( marks.png)
 
 ### ANIMALS PROGRAMME
 ![HERE](animals.png)
