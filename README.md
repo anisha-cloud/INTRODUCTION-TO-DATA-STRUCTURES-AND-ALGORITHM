@@ -3,7 +3,11 @@
 ## Screenshots
 
 ### AVERAGE MARKS PROGRAMME
-![HERE](Avg marks.png)
+![HERE](avg marks.png)
 
 ### ANIMALS PROGRAMME
 ![HERE](animals.png)
+
+### TRANVERSE
+![HERE](tranverse.png)
+
